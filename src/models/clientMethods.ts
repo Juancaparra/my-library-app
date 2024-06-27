@@ -28,7 +28,7 @@ export class clientMethods {
         if(this.clients.length === 0) {
             console.log('la Base de datos esta vacia.');
         } else {
-            console.log('Clientes en la Base de')
+            console.log('Clientes en la Base de Datos')
             this.clients.forEach(client => {
                 console.log(`- Id cliente: ${client.idCliente}, Nombre: ${client.nombre}, Apellido: ${client.apellido}, Direccion: ${client.direccion}, Telefono: ${client.telefono}, Correo: ${client.correo}`)
             })

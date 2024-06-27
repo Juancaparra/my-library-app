@@ -8,6 +8,22 @@ let Library=new bookStore();
 
 let dataClient=new clientMethods();
 
+let libro1 = new book("2543","La bestia", "leonardo da vincci", 50000, "Torre de Papel", "Ficcion")
+let libro2 = new book("4562","La Historia", "Jose", 23000, "Salamandra", "Drama")
+let libro3 = new book("3241","Punto final", "luisa", 130000, "Debolsillo", "Infantil")
+
+Library.addBook(libro1)
+Library.addBook(libro2)
+Library.addBook(libro3)
+
+let cliente1 = new client("1234","Ronald", "Patiño Guevara", "Barrio Gonzalo", "3234565987", "ronichikito@gmail.com")
+let cliente2 = new client("5689","Juan Esteban", "Restrepo Escobar", "Barrio Alazka", "34568785245", "bailarin4578@gmail.com")
+let cliente3 = new client("2578","Juan Camilo", "Parra Ospina", "Barrio compartir", "3006144008", "noduermo@gmail.com")
+
+dataClient.addClient(cliente1)
+dataClient.addClient(cliente2)
+dataClient.addClient(cliente3)
+
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
